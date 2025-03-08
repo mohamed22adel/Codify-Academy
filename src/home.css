@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient( to right, rgb(0, 247, 255) , rgb(10, 174, 180) ,rgb(6, 112, 116));
+    box-sizing: border-box;
+    padding: auto;
+    margin:0;
+}
+.home_photo{
+    display: flex;
+    justify-content: center;
+}
+.home_photo img{
+    padding: 15px;
+    width: 150px;
+    border-radius: 50%;
+}
+.home_name , .home_paragraph , .card{
+    text-align: center;
+}
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 18rem);
+    gap: 30px;
+    padding: 50px;
+    justify-content: center;
+}
+.btn-primary{
+    margin: auto 5px;
+}
+.card-img-top{
+    height: 200px;
+}
+
+@media (max-width:649px) {
+    .courses_container{
+        grid-template-columns: repeat(1, 18rem);
+    }
+}
+
+
+
+@media (min-width:650px) and (max-width:950px) {
+    .courses_container{
+        grid-template-columns: repeat(2, 18rem);
+    }
+}
